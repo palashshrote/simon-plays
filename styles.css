@@ -14,6 +14,11 @@ body {
     flex-direction: column;
     margin-bottom: 5rem;
 }
+.game-over {
+    background-color: red;
+    opacity: 0.5;
+}
+
 .grid {
     width: 15rem;
     height: 15rem;
@@ -23,22 +28,22 @@ body {
     display: flex; /* Ensures the divs inside it are aligned properly */
     justify-content: center;
 }
-.col-1 {
+.green {
     
     background-color: green;
     border-radius: 100% 0% 0% 0%;
 }
-.col-2 {
+.red {
     
     background-color: red;
     border-radius: 0% 100% 0% 0%;
 }
-.col-3 {
+.yellow {
     
     background-color: yellow;
     border-radius: 0% 0% 0% 100%;
 }
-.col-4 {
+.blue {
     
     background-color: blue;
     border-radius: 0% 0% 100% 0%;
@@ -50,4 +55,9 @@ body {
         height: 12rem;
         border: 10px solid black;
     }
+}
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
 }
