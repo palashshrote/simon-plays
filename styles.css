@@ -1,0 +1,53 @@
+body {
+    background-color:aqua;
+}
+
+.container {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+.grid {
+    width: 15rem;
+    height: 15rem;
+    border: 10px solid black;
+}
+.row {
+    display: flex; /* Ensures the divs inside it are aligned properly */
+    justify-content: center;
+}
+.col-1 {
+    
+    background-color: green;
+    border-radius: 100% 0% 0% 0%;
+}
+.col-2 {
+    
+    background-color: red;
+    border-radius: 0% 100% 0% 0%;
+}
+.col-3 {
+    
+    background-color: yellow;
+    border-radius: 0% 0% 0% 100%;
+}
+.col-4 {
+    
+    background-color: blue;
+    border-radius: 0% 0% 100% 0%;
+}
+
+@media (max-width: 520px) {
+    .grid {
+        width: 12rem;
+        height: 12rem;
+        border: 10px solid black;
+    }
+}
