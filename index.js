@@ -18,7 +18,13 @@ $(".yellow").click(function (event) {
   //   handler(event);
   newGame === true ? handler(event) : null;
 });
-$("body").keypress(function () {
+// $("body").keypress(function () {
+//   if (newGame === false) {
+//     newGame = true;
+//     nextSequence();
+//   }
+// });
+$("h1").click(function () {
   if (newGame === false) {
     newGame = true;
     nextSequence();
@@ -56,7 +62,7 @@ function gameOver() {
   gamePattern = [];
   userClickedPattern = [];
   newGame = false;
-  $("h1").text("Game Over, Press Any Key to Restart");
+  $("h1").text("Game Over, Tap to Restart");
 }
 function animate(event) {
   event.target.classList.add("pressed");
